@@ -1,0 +1,35 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run EVM XER Analyzer",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "evm_xer_analyzer",
+      "pythonArgs": [
+        "-Xfrozen_modules=off"
+      ],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Run Unit Tests",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "unittest",
+      "pythonArgs": [
+        "-Xfrozen_modules=off"
+      ],
+      "args": [
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    }
+  ]
+}

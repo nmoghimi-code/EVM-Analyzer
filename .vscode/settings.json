@@ -1,0 +1,13 @@
+{
+  "python.defaultInterpreterPath": "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+  "python.testing.unittestEnabled": true,
+  "python.testing.unittestArgs": [
+    "-s",
+    "tests",
+    "-v"
+  ],
+  "python.testing.pytestEnabled": false,
+  "python.analysis.extraPaths": [
+    "${workspaceFolder}"
+  ]
+}

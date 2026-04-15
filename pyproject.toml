@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "evm-xer-analyzer"
+version = "0.1.0"
+description = "Desktop tool for WBS-based EVM analysis of Primavera P6 XER schedules."
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [
+  { name = "Nima Moghimi" }
+]
+dependencies = []
+
+[project.optional-dependencies]
+build = [
+  "pyinstaller>=6.0"
+]
+
+[project.gui-scripts]
+evm-xer-analyzer = "evm_xer_analyzer.gui:run"
+
+[tool.setuptools.packages.find]
+include = ["evm_xer_analyzer*"]
