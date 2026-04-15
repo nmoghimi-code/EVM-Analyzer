@@ -42,9 +42,11 @@ def main() -> int:
             "--clean",
             "--windowed",
             "--onedir",
+            "--paths",
+            str(ROOT),
             "--name",
             APP_NAME,
-            str(ROOT / "evm_xer_analyzer" / "__main__.py"),
+            str(ROOT / "scripts" / "launch_app.py"),
         ]
     )
 
